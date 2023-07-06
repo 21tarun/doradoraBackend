@@ -25,8 +25,7 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 
-// app.set('views', path.join(__dirname, 'views'));
-// app.use('/chat',express.static(path.join(__dirname,'views')))
+
 app.use('/',route)
 
 
