@@ -39,7 +39,7 @@ app.use('/',route)
 
 
 
-mongoose.connect("mongodb+srv://tarun21:tarun1616@cluster0.h0l8mir.mongodb.net/chatHistory",{
+mongoose.connect(process.env.MONGODB_STR,{
     useNewUrlParser:true
 })
 .then(function(){
